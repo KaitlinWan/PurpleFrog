@@ -4,12 +4,12 @@ import java.util.NoSuchElementException;
 
 public class QQKachoo<T> implements Deque<T>{
 
-    //instance vars: 
+    //instance vars:
     private DLLNode<T> _front;
     private DLLNode<T> _end;
     private int _size;
 
-    //construcotr: 
+    //construcotr:
     public QQKachoo(){
 	_front = null;
 	_end = null;
@@ -100,12 +100,12 @@ public class QQKachoo<T> implements Deque<T>{
 	if (isEmpty()){
 	    throw new NoSuchElementException();
 	}
-	
+
 	return peekFirst();
     }
 
     /**
-       Retrieves, but does not remove, the last element of this deque. This method differs from peekLast only in that it throws an exception if this deque is  mpty. 
+       Retrieves, but does not remove, the last element of this deque. This method differs from peekLast only in that it throws an exception if this deque is  mpty.
     **/
     public T getLast(){
 	if (isEmpty()){
@@ -113,7 +113,7 @@ public class QQKachoo<T> implements Deque<T>{
 	}
 	return peekLast();
     }
-    
+
 
     public static void main (String[] args){
 	QQKachoo<String> a = new QQKachoo<String>();
